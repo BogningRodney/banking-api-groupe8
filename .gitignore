@@ -1,0 +1,47 @@
+# Repères d'environnement (TRÈS IMPORTANT pour la sécurité)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+
+# Dépendances (Trop lourd pour Git, installé via npm install)
+node_modules/
+jspm_packages/
+
+# Logs de l'application (Générés par npm ou nodemon)
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Caches et fichiers de build de l'éditeur (VS Code, JetBrains)
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.eslintcache
+.tsbuildinfo
+
+# Fichiers système (Mac / Windows)
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Dossiers de couverture de tests (Si vous utilisez Jest/Mocha)
+coverage/
+.nyc_output/
+
+# Dossier de build (Si vous utilisez TypeScript ou Babel)
+dist/
+build/
