@@ -17,10 +17,15 @@ app.use(express.json());
 // ─────────────────────────────────────────────
 // Middlewares globaux
 // ─────────────────────────────────────────────
-app.use(cors({
-  origin: "http://localhost:5173" || 'http://localhost:3000' ,
-  credentials: true,
-}));
+// app.use(cors({
+//   origin: "http://localhost:5173" ,
+//   credentials: true,
+// }));
+// ─────────────────────────────────────────────
+// Middlewares globaux
+// ─────────────────────────────────────────────
+app.use(cors());
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
