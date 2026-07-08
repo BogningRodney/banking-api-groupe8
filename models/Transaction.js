@@ -28,7 +28,7 @@ const transactionSchema = new mongoose.Schema(
     },
     type: {
       type: String,
-      enum: ['virement', 'depot', 'retrait'],
+      enum: ['virement', 'depot', 'retrait', 'virement_externe'],
       default: 'virement',
     },
     description: {
